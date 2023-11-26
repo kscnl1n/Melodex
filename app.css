@@ -1,0 +1,71 @@
+h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 800%;
+    /* remember that the default margins for h1 are 67 em. */
+    margin-top: 200px;
+    margin-bottom: 0px;
+}
+
+body {
+    background-color: hsl(263, 56%, 24%);
+    background-image: url('./sitebackgroundimages./homepagebg.png'); 
+    background-size: 100%, 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+} 
+
+/* classes below this line */
+
+
+.twinkleone {
+    position: abolute;
+    bottom: 8px;
+    left: 8px;
+}
+
+.twinkletwo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.slightlylargertext {
+    font-size: 110%;
+}
+
+.connectbutton {
+    background-color: hsl(179, 66%, 69%);
+    padding: 10px 30px 10px 30px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 200px;
+    font-size: 200%;
+}
+
+/* The following is a css psuedoclass called "active". It is only applied to the button when it's
+clicked- aka when it's active! */
+
+.connectbutton:active {
+    font-size: 190%;
+}
+
+.connectbuttondiv {
+    text-align: center;
+    padding-bottom: 9px;
+}
+
+.homepagecredits {
+    text-align: center;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    /* the following tags will make the image in the div be centered in line with the image */
+    justify-content: center; 
+}
+
+.link {
+    color: white;
+}
+.link:hover {
+    color: hsl(179, 66%, 69%);
+}
+
