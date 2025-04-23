@@ -17,6 +17,9 @@ body {
 
 /* classes below this line */
 
+.center-text{
+    text-align: center;
+}
 
 .twinkleone {
     position: abolute;
