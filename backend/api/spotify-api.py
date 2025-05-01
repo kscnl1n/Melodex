@@ -1,11 +1,14 @@
 import spotipy
-from spotipy.oauth2 import SpotifyOAuth
+from spotipy.oauth2 import SpotifyClientCredentials
 
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="your-client-id",
-                                               client_secret="your-client-secret",
-                                               redirect_uri="your-redirect-uri",
-                                               scope="user-library-read"))
+birdy_uri = 'spotify:artist:2WX2uTcsvV5OnS0inACecP'
+spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
 
-results = sp.current_user_playlists()
-for idx, item in enumerate(results['items']):
-    print(f"{idx + 1}. {item['name']}")
+results = spotify.artist_albums(birdy_uri, album_type='album')
+albums = results['items']
+while results['next']:
+    results = spotify.next(results)
+    albums.extend(results['items'])
+
+for album in albums:
+    print(album['name'])
