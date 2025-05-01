@@ -9,15 +9,15 @@ h1 {
 
 body {
     background-color: hsl(263, 56%, 24%);
-    background-image: url('./sitebackgroundimages./homepagebg.png'); 
+    background-image: url('./sitebackgroundimages./homepagebg.png');
     background-size: 100%, 100%;
     color: white;
     font-family: 'Poppins', sans-serif;
-} 
+}
 
 /* classes below this line */
 
-.center-text{
+.center-text {
     text-align: center;
 }
 
@@ -62,13 +62,13 @@ clicked- aka when it's active! */
     margin-bottom: 0px;
     padding-top: 0px;
     /* the following tags will make the image in the div be centered in line with the image */
-    justify-content: center; 
+    justify-content: center;
 }
 
 .link {
     color: white;
 }
+
 .link:hover {
     color: hsl(179, 66%, 69%);
 }
-
